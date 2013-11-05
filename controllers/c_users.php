@@ -119,6 +119,6 @@ class users_controller extends base_controller {
 		
 		#Display the view
 		echo $this->template;
-
+}
 
 } # end of the class
