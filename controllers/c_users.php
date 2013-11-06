@@ -58,7 +58,7 @@ class users_controller extends base_controller {
 		setcookie('token',$token,strtotime('+1 year'),'/');
 		echo " You are logged in!!	";
 		
-		Router::redirect('/posts/users');
+		
 		
 	}
 	#Fail
@@ -66,7 +66,7 @@ class users_controller extends base_controller {
 	
 		echo "login failed";
 	}
-	
+	Router::redirect('/');
 	}
 	
 	
