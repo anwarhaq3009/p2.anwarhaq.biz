@@ -58,7 +58,7 @@ class users_controller extends base_controller {
 		setcookie('token',$token,strtotime('+1 year'),'/');
 		echo " You are logged in!!	";
 		
-		
+		<a href='http://p2.anwarhaq.biz'> Go Home </a>
 		
 	}
 	#Fail
@@ -66,7 +66,6 @@ class users_controller extends base_controller {
 	
 		echo "login failed";
 	}
-	Router::redirect('/');
 	}
 	
 	
